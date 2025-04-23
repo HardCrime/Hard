@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HardCrime</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">HardCrime</h1>
+        <nav>
+            <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})" class="active">Проекты</button>
+            <button onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'})">Контакты</button>
+            <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Обо мне</button>
+            <button onclick="window.location.href='https://t.me/avanbiolog'">Биография</button>
+        </nav>
+    </header>
+    <main>
+        <section id="projects">
+            <h2>Проекты</h2>
+            <div class="card">
+                <h3>ВОСХОЖДЕНИЕ</h3>
+                <p>Закрытая группа для элитных участников. Восхождение начинается здесь.</p>
+                <a class="btn" href="https://t.me/+_qjY_Dqsb9E3YTE5" target="_blank">Перейти</a>
+            </div>
+            <div class="card">
+                <h3>КРАЙМ</h3>
+                <p>Место, где собираются участники Internet Crime. Возвращение легенд.</p>
+                <a class="btn" href="https://t.me/ReturnCrimeSquad" target="_blank">Перейти</a>
+            </div>
+        </section>
+        <section id="wheel">
+            <h2>Колесо Фортуны</h2>
+            <canvas id="fortuneWheel" width="300" height="300"></canvas>
+            <button onclick="spinWheel()">Крутить</button>
+        </section>
+        <section id="about">
+            <h2>Обо мне</h2>
+            <p>Владею кланом Internet Crime.</p>
+            <blockquote>“Цитата тут может быть любой, ты сам выбираешь свой путь.”</blockquote>
+        </section>
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <p>Связаться со мной: <a class="btn" href="https://t.me/VestHardov" target="_blank">@VestHardov</a></p>
+        </section>
+    </main>
+    <script src="assets/js/wheel.js"></script>
+</body>
+</html>
